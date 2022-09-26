@@ -2,6 +2,9 @@
 :root{
     --bg-nested: #00e165;
     --bg-cell: #006cfa;
+    --bg-art: #949494;
+    --hand-bord: black;
+    --hand-body: white;
 }
 .wrapper{
     margin-top: 1.5rem;
@@ -22,9 +25,21 @@
     height: 40px;
 }
 .art{
-    width: 100%;
-    max-height: 1360px;
+    width: 30vw;
+    margin: 30px auto;
+    height: 42.5vw;
 }
-.art [class*='col']{
-    height: ;
+.art .row{
+    height: calc(100% / 17);
+}
+.art .row div[class*='col']{
+    background-color: var(--bg-art);
+    height: 100%;
+    border: 1px solid black;
+}
+.art .row div.bg-blk{
+    background-color: var(--hand-bord);
+}
+.art .row div.bg-wt{
+    background-color: var(--hand-body);
 }
