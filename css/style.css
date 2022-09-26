@@ -1,0 +1,30 @@
+/* general */
+:root{
+    --bg-nested: #00e165;
+    --bg-cell: #006cfa;
+}
+.wrapper{
+    margin-top: 1.5rem;
+    width: 100%;
+}
+[class*='col']{
+
+    border: 1px solid white;
+    color: white;
+    background-color: var(--bg-cell);
+    min-height: 30px;
+    padding: .5rem;
+}
+.nested{
+    background-color: var(--bg-nested);
+}
+[class*='offset']{
+    height: 40px;
+}
+.art{
+    width: 100%;
+    max-height: 1360px;
+}
+.art [class*='col']{
+    height: ;
+}
